@@ -26,4 +26,11 @@ public class ShoppingController {
         dao.save(s);
         return ("Product added");
     }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping("/view")
+    public List<Shopping> ViewProduct()
+    {
+        return (List<Shopping>) dao.findAll();
+    }
 }
