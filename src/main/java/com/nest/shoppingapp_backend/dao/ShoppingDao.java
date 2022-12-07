@@ -1,4 +1,7 @@
 package com.nest.shoppingapp_backend.dao;
 
-public interface ShoppingDao {
+import com.nest.shoppingapp_backend.model.Shopping;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ShoppingDao extends CrudRepository<Shopping,Integer>{
 }
